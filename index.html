@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modern Dashboard</h1>
+        <div class="date-time">
+            <h2 id="currentDateTime"></h2>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <p id="weatherInfo">Loading weather...</p>
+        </div>
+        <div class="quote">
+            <h2>Quote of the Day</h2>
+            <p>"Action is the foundational key to all success." — Pablo Picasso</p>
+        </div>
+        <div class="image-of-the-day">
+            <h2>Picture of the Day</h2>
+            <img id="inspirationalImage" src="" alt="Inspirational Image" />
+        </div>
+        <div class="news">
+            <h2>Latest News</h2>
+            <ul id="newsHeadlines">
+                <li>Loading news...</li>
+            </ul>
+        </div>
+        <div class="task-section">
+            <h2>To-Do List</h2>
+            <div class="task-inputs">
+                <input type="text" id="taskInput" placeholder="Enter task">
+                <input type="date" id="dueDateInput">
+                <select id="priorityInput">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button id="addTaskButton">Add Task</button>
+            </div>
+            <div class="filters">
+                <button data-filter="all" class="filter-button active">All</button>
+                <button data-filter="completed" class="filter-button">Completed</button>
+                <button data-filter="incomplete" class="filter-button">Incomplete</button>
+            </div>
+            <input type="text" id="searchInput" placeholder="Search tasks">
+            <button id="clearAllButton">Clear All</button>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
